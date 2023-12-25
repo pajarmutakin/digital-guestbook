@@ -41,3 +41,7 @@ Route::get('/destroy/{id}', [GuestController::class, 'destroy']);
 
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
