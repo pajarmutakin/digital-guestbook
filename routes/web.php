@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\Update;
 use App\Http\Controllers\GuestController;
 // use App\Http\Controllers\MahasiswaController;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,11 +24,13 @@ use App\Http\Controllers\GuestController;
 // });
 
 Route::get('/read', [GuestController::class, 'read'])->name('read');
-Route::get('/', [GuestController::class, 'create']);
+Route::get('/create', [GuestController::class, 'create']);
 Route::post('/store', [GuestController::class, 'store']);
 Route::get('/edit/{id}', [GuestController::class, 'edit']);
 Route::put('/update/{id}', [GuestController::class, 'update']);
 Route::get('/destroy/{id}', [GuestController::class, 'destroy']);
+Route::get('/logout', [GuestController::class, 'logout']);
+
 
 
 

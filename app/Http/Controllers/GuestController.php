@@ -73,4 +73,11 @@ class GuestController extends Controller
         return redirect()->route('read')
             ->with('success', 'data deleted successfully');
     }
+
+    public function logout()
+    {
+    Auth::logout();
+    return redirect('/login'); // Redirect ke halaman login atau halaman lainnya.
+    }
+
 }

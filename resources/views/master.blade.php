@@ -40,7 +40,7 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="/">CREATE</a>
+							<a class="nav-link" href="/create">CREATE</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/read">READ</a>
